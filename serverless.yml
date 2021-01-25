@@ -1,0 +1,6 @@
+component: website
+name: bigg-healthy-blog
+
+inputs:
+  src: ./public
+  domain: www.bigg-healthy.com

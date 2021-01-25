@@ -1,4 +1,9 @@
 
+## Prerequisites
+npm install -g gatsby-cli
+
+npm install -g serverless
+
 ## Development
 1.  **Run dev mode locally.**
 
@@ -26,4 +31,8 @@
     Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## Deployment
+
+run gatsby build
+serverless deploy
+
 
