@@ -28,8 +28,6 @@ jobs:
       run: npm run build
 
     - name: Deploy to Production
-      uses: serverless/github-action@master
-      with:
-        args: deploy
-      env:
-        SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_KEY }}
+      run: npm install -g serverless
+      run: serverless config credentials --provider aws --key ${{ secrets.AWS_KEY }} --secret ${{ secrets.AWS_SECRET }}
+      run: serverless deploy
