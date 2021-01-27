@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    name: deploy
+    name: Deploy to Production
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -31,4 +31,5 @@ jobs:
       run: | 
           npm install -g serverless
           serverless config credentials --provider aws --key ${{ secrets.AWS_KEY }} --secret ${{ secrets.AWS_SECRET }}
+          SERVERLESS_ACCESS_KEY=${{ secrets.SERVERLESS_KEY }}
           serverless deploy --stage prod
