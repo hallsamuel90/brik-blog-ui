@@ -1,38 +1,51 @@
 
+## Bigg Healthy Blog ![Deploy main to production](https://github.com/hallsamuel90/bigg-healthy-blog/workflows/Deploy%20main%20to%20production/badge.svg?branch=main)
+A blog about about software engineering and other things that are interesting.
+
+### Built With
+* [Gatsby](https://www.gatsbyjs.com/)
+
 ## Prerequisites
-npm install -g gatsby-cli
+* [npm](https://www.npmjs.com/get-npm)
 
-npm install -g serverless
-
-## Development
-1.  **Run dev mode locally.**
-
-    Navigate into your new site’s directory and start it up.
+## Start Developing
+1.  **Install Dependencies**
 
     ```shell
-    cd my-blog-starter/
+    cd bigg-healthy-blog/
+    npm install
+    ```
+
+2.  **Run development and start editing!**
+
+    ```shell
+    cd bigg-healthy-blog/
     npx gatsby develop
     ```
 
-2.  **Open the source code and start editing!**
+    The blog is now running at `http://localhost:8000`!
 
-    Your site is now running at `http://localhost:8000`!
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool that can be used to experiment with querying the site's data. Learn more about using this   tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Make your edits and save your changes, the browser will update in real time!
 
 3.  **Adding Blog Posts**
 
-    Your site is now running at `http://localhost:8000`!
+    Blog posts are located in the `./content` directory and use [markdown](https://www.markdownguide.org/).
+    
+## Contributing
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+Submit a blog post! Any contributions you make are **greatly appreciated**.
+*note I'm still working on adding authors to individual posts*
 
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+1. Fork the Project
+2. Create your Post Branch (`git checkout -b post/some-sweet-blog-post`)
+3. Commit your Changes (`git commit -m 'wrote a sweet blog post!'`)
+4. Push to the Branch (`git push origin post/some-sweet-blog-post`)
+5. Open a Pull Request
 
-## Deployment
+## Contact
+Sam Hall - @biggHealthy_ hallsamuel90@gmail.com
 
-run gatsby build
-serverless deploy
 
 
