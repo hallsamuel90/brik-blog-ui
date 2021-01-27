@@ -35,7 +35,8 @@ Blog posts are located in the `./content` directory and use [markdown](https://w
 ## Contributing
 
 Submit a blog post! Any contributions you make are **greatly appreciated**.
-*note I'm still working on adding authors to individual posts*
+
+*Note I'm still working on adding authors to individual posts.*
 
 1. Fork the Project
 2. Create your Post Branch (`git checkout -b post/some-sweet-blog-post`)
