@@ -1,4 +1,3 @@
-org: bigghealthy
 name: Deploy main to production
 
 on:
