@@ -31,5 +31,6 @@ jobs:
       run: | 
           npm install -g serverless
           serverless config credentials --provider aws --key ${{ secrets.AWS_KEY }} --secret ${{ secrets.AWS_SECRET }}
-          SERVERLESS_ACCESS_KEY=${{ secrets.SERVERLESS_KEY }}
+          export SERVERLESS_ACCESS_KEY=${{ secrets.SERVERLESS_KEY }}
+          echo $SERVERLESS_ACCESS_KEY
           serverless deploy --stage prod
