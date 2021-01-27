@@ -5,18 +5,18 @@ A blog about about software engineering and other things that are interesting.
 ### Built With
 * [Gatsby](https://www.gatsbyjs.com/)
 
-## Prerequisites
+## Start Developing
+### Prerequisites
 * [npm](https://www.npmjs.com/get-npm)
 
-## Start Developing
-1.  **Install Dependencies**
+### Install Dependencies
 
     ```shell
     cd bigg-healthy-blog/
     npm install
     ```
 
-2.  **Run development and start editing!**
+### Run development and start editing!
 
     ```shell
     cd bigg-healthy-blog/
@@ -29,7 +29,7 @@ A blog about about software engineering and other things that are interesting.
 
     Make your edits and save your changes, the browser will update in real time!
 
-3.  **Adding Blog Posts**
+### Adding Blog Posts
 
     Blog posts are located in the `./content` directory and use [markdown](https://www.markdownguide.org/).
     
