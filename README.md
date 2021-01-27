@@ -19,7 +19,6 @@ npm install
 ### Run development and start editing!
 
 ```shell
-cd bigg-healthy-blog/
 npx gatsby develop
 ```
 
