@@ -1,5 +1,5 @@
 
-## Bigg Healthy Blog ![production-build](https://github.com/hallsamuel90/bigg-healthy-blog/workflows/production-build/badge.svg?branch=main) [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+## Bigg Healthy Blog ![Production](https://github.com/hallsamuel90/bigg-healthy-blog/workflows/Production/badge.svg) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 A blog about about software engineering and other things that are interesting.
 
 ### Built With
