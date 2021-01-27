@@ -11,27 +11,27 @@ A blog about about software engineering and other things that are interesting.
 
 ### Install Dependencies
 
-    ```shell
-    cd bigg-healthy-blog/
-    npm install
-    ```
+```shell
+cd bigg-healthy-blog/
+npm install
+```
 
 ### Run development and start editing!
 
-    ```shell
-    cd bigg-healthy-blog/
-    npx gatsby develop
-    ```
+```shell
+cd bigg-healthy-blog/
+npx gatsby develop
+```
 
-    The blog is now running at `http://localhost:8000`!
+The blog is now running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool that can be used to experiment with querying the site's data. Learn more about using this   tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+_Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool that can be used to experiment with querying the site's data. Learn more about using this   tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
-    Make your edits and save your changes, the browser will update in real time!
+Make your edits and save your changes, the browser will update in real time!
 
 ### Adding Blog Posts
 
-    Blog posts are located in the `./content` directory and use [markdown](https://www.markdownguide.org/).
+Blog posts are located in the `./content` directory and use [markdown](https://www.markdownguide.org/).
     
 ## Contributing
 
