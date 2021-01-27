@@ -28,6 +28,7 @@ jobs:
       run: npm run build
 
     - name: Deploy to Production
-      run: npm install -g serverless
-      run: serverless config credentials --provider aws --key ${{ secrets.AWS_KEY }} --secret ${{ secrets.AWS_SECRET }}
-      run: serverless deploy
+      run: | 
+          npm install -g serverless
+          serverless config credentials --provider aws --key ${{ secrets.AWS_KEY }} --secret ${{ secrets.AWS_SECRET }}
+          serverless deploy
