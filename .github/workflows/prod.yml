@@ -30,7 +30,8 @@ jobs:
     - name: Deploy to Production
       run: | 
           npm install -g serverless
-          serverless config credentials --provider aws --key ${{ secrets.AWS_KEY }} --secret ${{ secrets.AWS_SECRET }}
           serverless deploy --stage prod
       env:
         SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_KEY }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_KEY }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET }}
