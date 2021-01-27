@@ -1,5 +1,5 @@
 
-## Bigg Healthy Blog ![Deploy main to production](https://github.com/hallsamuel90/bigg-healthy-blog/workflows/Deploy%20main%20to%20production/badge.svg?branch=main)
+## Bigg Healthy Blog ![production-build](https://github.com/hallsamuel90/bigg-healthy-blog/workflows/production-build/badge.svg?branch=main)
 A blog about about software engineering and other things that are interesting.
 
 ### Built With
