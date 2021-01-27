@@ -28,13 +28,68 @@ _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This
 
 Make your edits and save your changes, the browser will update in real time!
 
-### Adding Blog Posts
+### Write a Blog Post!
 
-Blog posts are located in the `./content` directory and use [markdown](https://www.markdownguide.org/).
+Blog posts are located in the `./content` directory!
+
+#### 1. Write your content in markdown!
+
+> New to markdown? [Read this](https://guides.github.com/features/mastering-markdown/)
+
+> Need Content ideas? [Read this](./writers-guide.md)
+
+---
+
+#### 2. Name your post file name
+
+`YYYY-MM-DD-blog-post-name.md` :point_right: `2016-01-27-post-title-here.md`
+
+> [handy tool for slugifying titles](https://blog.tersmitten.nl/slugify/)
+
+---
+
+#### 3. In your post, include post meta information:
+
+Include the post metadata at the top:
+
+```
+---
+title: My awesome post title
+description: "This post is about awesome stuff!"
+date: 2016-07-25
+thumbnail: 'http://url-to-thumbnail.jpg'
+layout: Post
+authors:
+  - FirstnameLastname
+---
+```
+
+Below the post meta, add your markdown:
+
+<pre>
+# Post Heading
+
+This is an awesome paragraph!
+
+## Post SubSection
+
+[Link example](http://my-full-url-with-http-at-the-front.com)
+
+* List item 1
+* List item 2
+* List item 3
+
+```js
+// code snippet example with javascript (js) syntax highlighting
+console.log('JS code')
+```
+</pre>
+
+---
     
 ## Contributing
 
-Submit a blog post! Any contributions you make are **greatly appreciated**.
+Submit your blog post! Any contributions you make are **greatly appreciated**.
 
 *Note I'm still working on adding authors to individual posts.*
 
@@ -43,6 +98,10 @@ Submit a blog post! Any contributions you make are **greatly appreciated**.
 3. Commit your Changes (`git commit -m 'wrote a sweet blog post!'`)
 4. Push to the Branch (`git push origin post/some-sweet-blog-post`)
 5. Open a Pull Request
+
+Once the Pull Request is accepted, a new build will kick off and your post will automatically be published to the site.
+
+Make sure npm run build works locally or the build in our CI/CD will fail and the updates won't be visible on the site.
 
 ## License
 
