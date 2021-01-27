@@ -44,7 +44,9 @@ Submit a blog post! Any contributions you make are **greatly appreciated**.
 5. Open a Pull Request
 
 ## Contact
-Sam Hall - @biggHealthy_ hallsamuel90@gmail.com
+Sam Hall 
+* [@biggHealthy_](https://twitter.com/biggHealthy_) 
+* hallsamuel90@gmail.com
 
 
 
