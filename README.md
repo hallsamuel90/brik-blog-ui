@@ -43,6 +43,10 @@ Submit a blog post! Any contributions you make are **greatly appreciated**.
 4. Push to the Branch (`git push origin post/some-sweet-blog-post`)
 5. Open a Pull Request
 
+## License
+
+Licensed under Apache2. See `LICENSE` for more information.
+
 ## Contact
 Sam Hall 
 * [@biggHealthy_](https://twitter.com/biggHealthy_) 
