@@ -2,13 +2,14 @@ module.exports = {
   siteMetadata: {
     title: `biggHealthy`,
     author: {
-      name: `biggHealthy`,
+      name: `Sam Hall`,
       summary: `building cool shit brick by brick.`,
     },
     description: `?`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: `https://bigg-healthy.com`,
     social: {
       twitter: `biggHealthy_`,
+      github: `hallsamuel90`,
     },
   },
   plugins: [
@@ -70,6 +71,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-theme-material-ui`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
