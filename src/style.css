@@ -159,7 +159,7 @@ p {
 }
 
 ul,
-ol {
+/* ol {
   margin-left: var(--spacing-0);
   margin-right: var(--spacing-0);
   padding: var(--spacing-0);
@@ -172,9 +172,9 @@ ul li,
 ol li {
   padding-left: var(--spacing-0);
   margin-bottom: calc(var(--spacing-8) / 2);
-}
+} */
 
-li > p {
+/* li > p {
   margin-bottom: calc(var(--spacing-8) / 2);
 }
 
@@ -185,7 +185,7 @@ li *:last-child {
 li > ul {
   margin-left: var(--spacing-8);
   margin-top: calc(var(--spacing-8) / 2);
-}
+} */
 
 blockquote {
   margin-left: calc(-1 * var(--spacing-6));
@@ -201,9 +201,9 @@ blockquote > :last-child {
 }
 
 blockquote > ul,
-blockquote > ol {
+/* blockquote > ol {
   list-style-position: inside;
-}
+} */
 
 table {
   width: 100%;
