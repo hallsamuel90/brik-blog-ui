@@ -7,7 +7,10 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 import Image from "gatsby-image"
+import GitHubIcon from '@material-ui/icons/GitHub';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -27,6 +30,7 @@ const Bio = () => {
           }
           social {
             twitter
+            github
           }
         }
       }
@@ -53,11 +57,15 @@ const Bio = () => {
       )}
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
+          Written by {author.name}
+          <div>
+          <Link to={`https://twitter.com/${social?.twitter || ``}`}>
+            <TwitterIcon></TwitterIcon>
+          </Link>
+          <Link to={`https://github.com/${social?.github || ``}`}>
+            <GitHubIcon></GitHubIcon>
+          </Link>
+          </div>
         </p>
       )}
     </div>
