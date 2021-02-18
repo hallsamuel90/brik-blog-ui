@@ -9,10 +9,27 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
 import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
+
+  const useStyles = makeStyles((theme) => ({
+    cardHeader: {
+      color: '#FFFFFF',
+      backgroundColor: '#01090F'
+    },
+    cardSubHeader: {
+      color: theme.palette.secondary.main
+    },
+    cardContent: {
+      color: '#01090F',
+      backgroundColor: '#FFFFFF',
+    }
+  }));
+
+  const classes = useStyles();
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -27,14 +44,15 @@ const BlogIndex = ({ data, location }) => {
               <Box mb={2}>
               <Card>
                 <CardActionArea>
-                  <Link to={post.fields.slug} itemProp="url">
+                  <Link to={post.fields.slug} itemProp="url" style={{ textDecoration: 'none' }}>
                     <CardHeader title={title}
                       subheader={
-                        <small>{post.frontmatter.date}</small>
+                        <small className={classes.cardSubHeader}>{post.frontmatter.date}</small>
                       }
+                      className={classes.cardHeader}
                       >
                     </CardHeader>
-                    <CardContent>
+                    <CardContent className={classes.cardContent}>
                       <Typography component="p">
                         {post.frontmatter.description || post.excerpt},
                       </Typography>
