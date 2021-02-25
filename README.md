@@ -1,5 +1,5 @@
 
-## Bigg Healthy Blog ![Production](https://github.com/hallsamuel90/bigg-healthy-blog/workflows/Production/badge.svg) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+## All I Do Is Code![Production](https://github.com/hallsamuel90/aidic-blog/workflows/Production/badge.svg) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 A blog about about software engineering and other things that are interesting.
 
 ### Built With
@@ -12,7 +12,7 @@ A blog about about software engineering and other things that are interesting.
 ### Install Dependencies
 
 ```shell
-cd bigg-healthy-blog/
+cd aidic-blog/
 npm install
 ```
 

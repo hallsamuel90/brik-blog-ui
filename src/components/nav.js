@@ -19,7 +19,7 @@ const Nav = ({title}) => {
     <div className={classes.root}>
       <AppBar position="static">
         <h1 className={classes.home}>
-          <Link to="/">{title}</Link>
+          <Link to="/">aidic: AllIDoIsCode</Link>
         </h1>
       </AppBar>
     </div>
