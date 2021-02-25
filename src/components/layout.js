@@ -16,7 +16,7 @@ const Layout = ({ location, title, children }) => {
           <main>{children}</main>
         
           <footer>
-            © {new Date().getFullYear()} <a href="https://www.bigg-healthy.com"> biggHealthy</a>
+            © {new Date().getFullYear()} <a href="https://www.allidoiscode.com"> allidoiscode</a>
           </footer>
         </div>
       </ThemeTopLayout>

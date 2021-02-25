@@ -1,7 +1,7 @@
 org: bigghealthy
 component: website
-name: bigg-healthy-blog
+name: all-i-do-is-code
 
 inputs:
   src: ./public
-  domain: www.bigg-healthy.com
+  domain: www.allidoiscode.com

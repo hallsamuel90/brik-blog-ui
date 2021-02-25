@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `biggHealthy`,
+    title: `all i do is code`,
     author: {
       name: `Sam Hall`,
       summary: `building cool shit brick by brick.`,
     },
     description: `?`,
-    siteUrl: `https://bigg-healthy.com`,
+    siteUrl: `https://allidoiscode.com`,
     social: {
       twitter: `biggHealthy_`,
       github: `hallsamuel90`,
