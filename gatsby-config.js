@@ -14,14 +14,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `2E91MEMMB4`,
-        head: true,
-        anonymize: true,
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -63,8 +55,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `All I Do Is Code`,
+        short_name: `AIDIC`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -73,6 +65,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `G-2E91MEMMB4`,
+        head: false,
+        anonymize: true,
+      },
+    }
     `gatsby-theme-material-ui`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
