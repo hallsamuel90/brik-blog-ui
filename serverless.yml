@@ -3,5 +3,5 @@ component: website
 name: all-i-do-is-code
 
 inputs:
-  src: ./public
+  src: ./build
   domain: www.allidoiscode.com
