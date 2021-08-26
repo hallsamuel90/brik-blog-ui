@@ -22,14 +22,17 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Install Dependencies
-      run: npm ci
+      run: yarn install
+
+    - name: Test
+      run: yarn test
 
     - name: Build
-      run: npm run build
+      run: yarn build
 
     - name: Deploy to Production
       run: | 
-          npm install -g serverless
+          yarn global add serverless
           serverless deploy --stage prod
       env:
         SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_KEY }}
