@@ -1,116 +1,46 @@
+# Getting Started with Create React App
 
-## All I Do Is Code![Production](https://github.com/hallsamuel90/aidic-blog/workflows/Production/badge.svg) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-A blog about about software engineering and other things that are interesting.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Built With
-* [Gatsby](https://www.gatsbyjs.com/)
+## Available Scripts
 
-## Start Developing
-### Prerequisites
-* [npm](https://www.npmjs.com/get-npm)
+In the project directory, you can run:
 
-### Install Dependencies
+### `yarn start`
 
-```shell
-cd aidic-blog/
-npm install
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Run development and start editing!
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-```shell
-npx gatsby develop
-```
+### `yarn test`
 
-The blog is now running at `http://localhost:8000`!
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-_Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool that can be used to experiment with querying the site's data. Learn more about using this   tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+### `yarn build`
 
-Make your edits and save your changes, the browser will update in real time!
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Write a Blog Post!
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Blog posts are located in the `./content` directory!
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-#### 1. Write your content in markdown!
+### `yarn eject`
 
-> New to markdown? [Read this](https://guides.github.com/features/mastering-markdown/)
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-> Need Content ideas? [Read this](./writers-guide.md)
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
----
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-#### 2. Name your post file name
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-`YYYY-MM-DD-blog-post-name.md` :point_right: `2016-01-27-post-title-here.md`
+## Learn More
 
-> [handy tool for slugifying titles](https://blog.tersmitten.nl/slugify/)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
----
-
-#### 3. In your post, include post meta information:
-
-Include the post metadata at the top:
-
-```
----
-title: My awesome post title
-description: "This post is about awesome stuff!"
-date: 2016-07-25
-thumbnail: 'http://url-to-thumbnail.jpg'
-layout: Post
-authors:
-  - FirstnameLastname
----
-```
-
-Below the post meta, add your markdown:
-
-<pre>
-# Post Heading
-
-This is an awesome paragraph!
-
-## Post SubSection
-
-[Link example](http://my-full-url-with-http-at-the-front.com)
-
-* List item 1
-* List item 2
-* List item 3
-
-```js
-// code snippet example with javascript (js) syntax highlighting
-console.log('JS code')
-```
-</pre>
-
----
-    
-## Contributing
-
-Submit your blog post! Any contributions you make are **greatly appreciated**.
-
-*Note I'm still working on adding authors to individual posts.*
-
-1. Fork the Project
-2. Create your Post Branch (`git checkout -b post/some-sweet-blog-post`)
-3. Commit your Changes (`git commit -m 'wrote a sweet blog post!'`)
-4. Push to the Branch (`git push origin post/some-sweet-blog-post`)
-5. Open a Pull Request
-
-Once the Pull Request is accepted, a new build will kick off and your post will automatically be published to the site.
-
-Make sure npm run build works locally or the build in our CI/CD will fail and the updates won't be visible on the site.
-
-## License
-
-Licensed under Apache2. See `LICENSE` for more information.
-
-## Contact
-Sam Hall 
-* [@biggHealthy_](https://twitter.com/biggHealthy_) 
-* hallsamuel90@gmail.com
-
-
-
+To learn React, check out the [React documentation](https://reactjs.org/).
