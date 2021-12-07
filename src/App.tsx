@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box, Typography } from "@mui/material"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Box
+      sx={{
+        height: "90v",
+        width: "auto",
+        justifyContent: "center",
+      }}
+    >
+      <Box sx={{ textAlign: "center" }}>
+        <header className="App-header">
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          />
+        </header>
+        <Typography variant="h1">All I Do Is Code</Typography>
+        <Typography variant="h2">a blog by Sam Hall</Typography>
+        <Typography>coming soon...</Typography>
+      </Box>
+    </Box>
+  )
 }
 
-export default App;
+export default App
