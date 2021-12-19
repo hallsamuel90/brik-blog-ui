@@ -1,14 +1,14 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react"
-import { BlogPostCard } from "."
+import { MainFeatureBlogPost } from "."
 
 export default {
-  title: "Components/BlogPostCard",
-  component: BlogPostCard,
+  title: "Components/MainFeatureBlogPost",
+  component: MainFeatureBlogPost,
   argTypes: {},
-} as ComponentMeta<typeof BlogPostCard>
+} as ComponentMeta<typeof MainFeatureBlogPost>
 
-const Template: ComponentStory<typeof BlogPostCard> = args => (
-  <BlogPostCard {...args} />
+const Template: ComponentStory<typeof MainFeatureBlogPost> = args => (
+  <MainFeatureBlogPost {...args} />
 )
 
 export const Primary = Template.bind({})
