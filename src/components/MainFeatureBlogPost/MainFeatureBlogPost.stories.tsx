@@ -19,5 +19,9 @@ Primary.args = {
     author: "Sam Hall",
     publishDate: "Dec 15, 2021",
     link: "https://allidoiscode.com",
+    image: {
+      location: "/assets/feet-up.png",
+      description: "feet-up",
+    },
   },
 }
