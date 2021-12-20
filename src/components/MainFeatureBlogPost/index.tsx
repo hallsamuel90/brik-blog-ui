@@ -20,17 +20,11 @@ export const MainFeatureBlogPost = ({ blogPost }: MainFeatureBlogPostProps) => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        // backgroundImage: `url(${blogPost.image})`,
+        backgroundImage: `url(${
+          blogPost.image.location ?? "/assets/feet-up.png"
+        })`,
       }}
     >
-      {/* Increase the priority of the hero background image */}
-      {
-        // <img
-        //   style={{ display: "none" }}
-        //   src={blogPost.image}
-        //   alt={blogPost.imageText}
-        // />
-      }
       <Box
         sx={{
           position: "absolute",

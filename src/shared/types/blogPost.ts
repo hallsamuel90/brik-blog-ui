@@ -4,4 +4,8 @@ export interface BlogPost {
   publishDate: string
   author: string
   link: string
+  image: {
+    location: string
+    description: string
+  }
 }

@@ -19,6 +19,10 @@ Primary.args = {
     author: "Sam Hall",
     publishDate: "December 16th, 2021",
     link: "public/blog-posts/im-ron-burgundy",
+    image: {
+      location: "/assets/feet-up.png",
+      description: "feet-up",
+    },
   },
   blogPosts: [
     {
@@ -27,6 +31,10 @@ Primary.args = {
       author: "Sam Hall",
       publishDate: "December 16th, 2021",
       link: "public/blog-posts/im-ron-burgundy",
+      image: {
+        location: "/assets/feet-up.png",
+        description: "feet-up",
+      },
     },
     {
       title: "I'm Ron Burgundy?",
@@ -34,6 +42,10 @@ Primary.args = {
       author: "Sam Hall",
       publishDate: "December 16th, 2021",
       link: "public/blog-posts/im-ron-burgundy",
+      image: {
+        location: "/assets/feet-up.png",
+        description: "feet-up",
+      },
     },
     {
       title: "I'm Ron Burgundy?",
@@ -41,6 +53,10 @@ Primary.args = {
       author: "Sam Hall",
       publishDate: "December 16th, 2021",
       link: "public/blog-posts/im-ron-burgundy",
+      image: {
+        location: "/assets/feet-up.png",
+        description: "feet-up",
+      },
     },
     {
       title: "I'm Ron Burgundy?",
@@ -48,6 +64,10 @@ Primary.args = {
       author: "Sam Hall",
       publishDate: "December 16th, 2021",
       link: "public/blog-posts/im-ron-burgundy",
+      image: {
+        location: "/assets/feet-up.png",
+        description: "feet-up",
+      },
     },
     {
       title: "I'm Ron Burgundy?",
@@ -55,6 +75,10 @@ Primary.args = {
       author: "Sam Hall",
       publishDate: "December 16th, 2021",
       link: "public/blog-posts/im-ron-burgundy",
+      image: {
+        location: "/assets/feet-up.png",
+        description: "feet-up",
+      },
     },
     {
       title: "I'm Ron Burgundy?",
@@ -62,6 +86,10 @@ Primary.args = {
       author: "Sam Hall",
       publishDate: "December 16th, 2021",
       link: "public/blog-posts/im-ron-burgundy",
+      image: {
+        location: "/assets/feet-up.png",
+        description: "feet-up",
+      },
     },
     {
       title: "I'm Ron Burgundy?",
@@ -69,6 +97,10 @@ Primary.args = {
       author: "Sam Hall",
       publishDate: "December 16th, 2021",
       link: "public/blog-posts/im-ron-burgundy",
+      image: {
+        location: "/assets/feet-up.png",
+        description: "feet-up",
+      },
     },
     {
       title: "I'm Ron Burgundy?",
@@ -76,6 +108,10 @@ Primary.args = {
       author: "Sam Hall",
       publishDate: "December 16th, 2021",
       link: "public/blog-posts/im-ron-burgundy",
+      image: {
+        location: "/assets/feet-up.png",
+        description: "feet-up",
+      },
     },
     {
       title: "I'm Ron Burgundy?",
@@ -83,6 +119,10 @@ Primary.args = {
       author: "Sam Hall",
       publishDate: "December 16th, 2021",
       link: "public/blog-posts/im-ron-burgundy",
+      image: {
+        location: "/assets/feet-up.png",
+        description: "feet-up",
+      },
     },
   ],
 }
