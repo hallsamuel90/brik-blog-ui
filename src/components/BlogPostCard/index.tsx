@@ -2,6 +2,8 @@ import {
   Card,
   CardActionArea,
   CardContent,
+  CardMedia,
+  Grid,
   Link,
   Typography,
 } from "@mui/material"
@@ -12,24 +14,32 @@ export interface BlogPostCardProps {
 }
 
 export const BlogPostCard = ({ blogPost }: BlogPostCardProps) => {
-  const { title, publishDate, author, link, preview } = blogPost
+  const { title, publishDate, author, link, preview, image } = blogPost
 
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea onClick={() => console.log("todo")}>
-        <CardContent>
-          <Typography variant="h6" component="div">
-            {title}
-          </Typography>
-          <Typography gutterBottom variant="subtitle2" color="text.secondary">
-            {publishDate} by {author}
-          </Typography>
-          <Link href={link} underline="hover">
-            <Typography variant="body2" color="text.primary">
-              {`${preview}...`}
+        <Grid container spacing={0}>
+          <CardContent sx={{ flex: 1 }}>
+            <Typography variant="h6" component="div">
+              {title}
             </Typography>
-          </Link>
-        </CardContent>
+            <Typography gutterBottom variant="subtitle2" color="text.secondary">
+              {publishDate} by {author}
+            </Typography>
+            <Link href={link} underline="hover">
+              <Typography variant="body2" color="text.primary">
+                {`${preview}...`}
+              </Typography>
+            </Link>
+          </CardContent>
+          <CardMedia
+            component="img"
+            sx={{ width: 110, display: { xs: "none", sm: "block" } }}
+            image={image.location}
+            alt={image.description}
+          />
+        </Grid>
       </CardActionArea>
     </Card>
   )

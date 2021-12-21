@@ -16,7 +16,7 @@ export const MainFeatureBlogPost = ({ blogPost }: MainFeatureBlogPostProps) => {
         position: "relative",
         backgroundColor: theme.palette.primary.light,
         color: theme.palette.primary.contrastText,
-        mb: 4,
+        mb: theme.spacing(1),
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -41,6 +41,7 @@ export const MainFeatureBlogPost = ({ blogPost }: MainFeatureBlogPostProps) => {
               position: "relative",
               p: { xs: 3, md: 6 },
               pr: { md: 0 },
+              minHeight: 350,
             }}
           >
             <Typography
