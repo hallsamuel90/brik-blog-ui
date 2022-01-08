@@ -1,13 +1,14 @@
-import { AppBar, Box, Toolbar, Typography, Link } from "@mui/material"
-import { useTheme } from "@emotion/react"
-import { BrikTheme } from "../../shared/theme"
+import React from 'react';
+import { AppBar, Box, Toolbar, Typography, Link } from '@mui/material';
+import { useTheme } from '@emotion/react';
+import { BrikTheme } from '../../shared/theme';
 
 export interface NavbarProps {
-  toolbarColor?: string
+  toolbarColor?: string;
 }
 
 export const Navbar = ({}: NavbarProps) => {
-  const theme = useTheme() as BrikTheme
+  const theme = useTheme() as BrikTheme;
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -25,5 +26,5 @@ export const Navbar = ({}: NavbarProps) => {
         </Toolbar>
       </AppBar>
     </Box>
-  )
-}
+  );
+};

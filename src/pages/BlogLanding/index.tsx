@@ -1,15 +1,15 @@
-import { ThemeProvider } from "@emotion/react"
-import { Box, Container, Grid, Typography } from "@mui/material"
-
-import { BlogPostCard } from "../../components/BlogPostCard"
-import { MainFeatureBlogPost } from "../../components/MainFeatureBlogPost"
-import { Navbar } from "../../components/Navbar"
-import { BlogPost } from "../../shared/types"
-import { theme } from "../../shared/theme"
+import React from 'react';
+import { ThemeProvider } from '@emotion/react';
+import { Box, Container, Grid, Typography } from '@mui/material';
+import { BlogPostCard } from '../../components/BlogPostCard';
+import { MainFeatureBlogPost } from '../../components/MainFeatureBlogPost';
+import { Navbar } from '../../components/Navbar';
+import { BlogPost } from '../../shared/types';
+import { theme } from '../../shared/theme';
 
 export interface BlogLandingProps {
-  mainFeaturedBlogPost: BlogPost
-  blogPosts: BlogPost[]
+  mainFeaturedBlogPost: BlogPost;
+  blogPosts: BlogPost[];
 }
 
 export const BlogLanding = ({
@@ -32,8 +32,8 @@ export const BlogLanding = ({
             Latest from the noggin...
           </Typography>
           <Grid container spacing={3}>
-            {blogPosts.map(blogPost => (
-              <Grid item>
+            {blogPosts.map((blogPost) => (
+              <Grid item key={blogPost.title}>
                 <BlogPostCard blogPost={blogPost} />
               </Grid>
             ))}
@@ -41,5 +41,5 @@ export const BlogLanding = ({
         </Container>
       </ThemeProvider>
     </>
-  )
-}
+  );
+};

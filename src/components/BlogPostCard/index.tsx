@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Card,
   CardActionArea,
@@ -6,19 +7,19 @@ import {
   Grid,
   Link,
   Typography,
-} from "@mui/material"
-import { BlogPost } from "../../shared/types"
+} from '@mui/material';
+import { BlogPost } from '../../shared/types';
 
 export interface BlogPostCardProps {
-  blogPost: BlogPost
+  blogPost: BlogPost;
 }
 
 export const BlogPostCard = ({ blogPost }: BlogPostCardProps) => {
-  const { title, publishDate, author, link, preview, image } = blogPost
+  const { id, title, publishDate, author, link, preview, image } = blogPost;
 
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea onClick={() => console.log("todo")}>
+      <CardActionArea onClick={() => console.log('todo')}>
         <Grid container spacing={0}>
           <CardContent sx={{ flex: 1 }}>
             <Typography variant="h6" component="div">
@@ -27,7 +28,7 @@ export const BlogPostCard = ({ blogPost }: BlogPostCardProps) => {
             <Typography gutterBottom variant="subtitle2" color="text.secondary">
               {publishDate} by {author}
             </Typography>
-            <Link href={link} underline="hover">
+            <Link href={id} underline="hover">
               <Typography variant="body2" color="text.primary">
                 {`${preview}...`}
               </Typography>
@@ -35,12 +36,12 @@ export const BlogPostCard = ({ blogPost }: BlogPostCardProps) => {
           </CardContent>
           <CardMedia
             component="img"
-            sx={{ width: 110, display: { xs: "none", sm: "block" } }}
+            sx={{ width: 110, display: { xs: 'none', sm: 'block' } }}
             image={image.location}
             alt={image.description}
           />
         </Grid>
       </CardActionArea>
     </Card>
-  )
-}
+  );
+};
