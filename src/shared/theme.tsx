@@ -1,17 +1,17 @@
-import { createTheme } from "@mui/material"
+import { createTheme } from '@mui/material';
 
 const themeOptions = {
   palette: {
-    type: "light",
+    type: 'light',
     primary: {
-      main: "#1d1e1e",
+      main: '#1d1e1e',
     },
     secondary: {
-      main: "#e91e63",
+      main: '#e91e63',
     },
   },
-}
+};
 
-export const theme = createTheme(themeOptions)
+export const theme = createTheme(themeOptions);
 
-export type BrikTheme = typeof theme
+export type BrikTheme = typeof theme;

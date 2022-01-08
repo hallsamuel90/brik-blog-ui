@@ -4,11 +4,13 @@ import { BrikTheme } from '../../shared/theme';
 import { BlogPost } from '../../shared/types';
 import { useTheme } from '@emotion/react';
 
-export interface MainFeatureBlogPostProps {
-  blogPost: BlogPost;
+export interface BlogPostDetailHeroProps {
+  imageLocation: string;
 }
 
-export const MainFeatureBlogPost = ({ blogPost }: MainFeatureBlogPostProps) => {
+export const BlogPostDetailHero = ({
+  imageLocation,
+}: BlogPostDetailHeroProps) => {
   const theme = useTheme() as BrikTheme;
 
   return (
@@ -21,9 +23,7 @@ export const MainFeatureBlogPost = ({ blogPost }: MainFeatureBlogPostProps) => {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        backgroundImage: `url(${
-          blogPost.image.location ?? '/assets/feet-up.png'
-        })`,
+        backgroundImage: `url(${imageLocation ?? '/assets/feet-up.png'})`,
       }}
     >
       <Box
@@ -44,26 +44,7 @@ export const MainFeatureBlogPost = ({ blogPost }: MainFeatureBlogPostProps) => {
               pr: { md: 0 },
               minHeight: 350,
             }}
-          >
-            <Typography
-              component="h1"
-              variant="h3"
-              color="inherit"
-              gutterBottom
-            >
-              {blogPost.title}
-            </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
-              {blogPost.preview}
-            </Typography>
-            <Link
-              variant="subtitle1"
-              href={blogPost.id}
-              sx={{ color: theme.palette.primary.contrastText }}
-            >
-              continue reading...
-            </Link>
-          </Box>
+          ></Box>
         </Grid>
       </Grid>
     </Paper>

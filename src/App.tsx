@@ -1,27 +1,32 @@
-import { Box, Typography } from "@mui/material"
+import React from 'react';
+import { BlogLanding } from './pages/BlogLanding';
+import { blogPostsStore } from './pages/BlogLanding/blogPostsStore';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { BlogPostDetail } from './pages/BlogPostDetail';
+import { useBlogPostDetailLogic } from './pages/BlogPostDetail/useBlogPostDetailLogic';
 
 const App = () => {
   return (
-    <Box
-      sx={{
-        height: "90v",
-        width: "auto",
-        justifyContent: "center",
-      }}
-    >
-      <Box sx={{ textAlign: "center" }}>
-        <header className="App-header">
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-          />
-        </header>
-        <Typography variant="h1">All I Do Is Code</Typography>
-        <Typography variant="h2">a blog by Sam Hall</Typography>
-        <Typography>coming soon...</Typography>
-      </Box>
-    </Box>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/blog-posts" />}></Route>
+        <Route
+          path="blog-posts/:id"
+          element={
+            <BlogPostDetail
+              {...useBlogPostDetailLogic({
+                blogPost: blogPostsStore.mainFeaturedBlogPost,
+              })}
+            />
+          }
+        />
+        <Route
+          path="blog-posts"
+          element={<BlogLanding {...blogPostsStore} />}
+        />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
