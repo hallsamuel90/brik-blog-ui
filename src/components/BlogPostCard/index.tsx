@@ -9,6 +9,7 @@ import {
   Typography,
 } from '@mui/material';
 import { BlogPost } from '../../shared/types';
+import { Link as RouterLink } from 'react-router-dom';
 
 export interface BlogPostCardProps {
   blogPost: BlogPost;
@@ -28,7 +29,7 @@ export const BlogPostCard = ({ blogPost }: BlogPostCardProps) => {
             <Typography gutterBottom variant="subtitle2" color="text.secondary">
               {publishDate} by {author}
             </Typography>
-            <Link href={id} underline="hover">
+            <Link component={RouterLink} to={id} underline="hover">
               <Typography variant="body2" color="text.primary">
                 {`${preview}...`}
               </Typography>

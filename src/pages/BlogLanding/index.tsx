@@ -6,23 +6,25 @@ import { MainFeatureBlogPost } from '../../components/MainFeatureBlogPost';
 import { Navbar } from '../../components/Navbar';
 import { BlogPost } from '../../shared/types';
 import { theme } from '../../shared/theme';
+import { BlogStore, useBlogLandingLogic } from './useBlogLandingLogic';
 
 export interface BlogLandingProps {
-  mainFeaturedBlogPost: BlogPost;
-  blogPosts: BlogPost[];
+  blogStore?: BlogStore;
+  loading: boolean;
 }
 
-export const BlogLanding = ({
-  mainFeaturedBlogPost,
-  blogPosts,
-}: BlogLandingProps) => {
+export const BlogLandingPage = ({ blogStore, loading }: BlogLandingProps) => {
+  if (!blogStore) {
+    return <></>;
+  }
+
   return (
     <>
       <ThemeProvider theme={theme}>
         <Navbar toolbarColor={theme.palette.primary.main} />
         <Container maxWidth="lg">
           <Box sx={{ paddingTop: 2 }}>
-            <MainFeatureBlogPost blogPost={mainFeaturedBlogPost} />
+            <MainFeatureBlogPost blogPost={blogStore.mainFeaturedBlogPost} />
           </Box>
           <Typography
             variant="h6"
@@ -32,7 +34,7 @@ export const BlogLanding = ({
             Latest from the noggin...
           </Typography>
           <Grid container spacing={3}>
-            {blogPosts.map((blogPost) => (
+            {blogStore.blogPosts.map((blogPost) => (
               <Grid item key={blogPost.title}>
                 <BlogPostCard blogPost={blogPost} />
               </Grid>
@@ -43,3 +45,8 @@ export const BlogLanding = ({
     </>
   );
 };
+
+export const BlogLanding = () => BlogLandingPage({ ...useBlogLandingLogic() });
+
+// const BlogPostDetail = ({ blogPost }: { blogPost: BlogPost }) =>
+//   BlogPostDetailPage({ ...useBlogPostDetailLogic({ blogPost }) });

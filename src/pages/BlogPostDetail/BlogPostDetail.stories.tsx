@@ -1,15 +1,15 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { BlogPostDetail } from '.';
+import { BlogPostDetailPage } from '.';
 
 export default {
   title: 'Pages/BlogPostDetail',
-  component: BlogPostDetail,
+  component: BlogPostDetailPage,
   argTypes: {},
-} as ComponentMeta<typeof BlogPostDetail>;
+} as ComponentMeta<typeof BlogPostDetailPage>;
 
-const Template: ComponentStory<typeof BlogPostDetail> = (args) => (
-  <BlogPostDetail {...args} />
+const Template: ComponentStory<typeof BlogPostDetailPage> = (args) => (
+  <BlogPostDetailPage {...args} />
 );
 
 export const Primary = Template.bind({});

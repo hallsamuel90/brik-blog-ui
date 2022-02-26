@@ -6,14 +6,20 @@ import { BlogPost } from '../../shared/types';
 import { theme } from '../../shared/theme';
 import { BlogPostDetailHero } from '../../components/BlogPostDetailHero';
 import Markdown from 'markdown-to-jsx';
+import { useBlogPostDetailLogic } from './useBlogPostDetailLogic';
 
 export interface BlogPostDetailProps {
-  blogPost: BlogPost;
+  blogPost?: BlogPost;
   content: string;
 }
 
-export const BlogPostDetail = ({ blogPost, content }: BlogPostDetailProps) => {
-  console.log(content);
+export const BlogPostDetailPage = ({
+  blogPost,
+  content,
+}: BlogPostDetailProps) => {
+  if (!blogPost) {
+    return <></>;
+  }
 
   return (
     <>
@@ -38,3 +44,8 @@ export const BlogPostDetail = ({ blogPost, content }: BlogPostDetailProps) => {
     </>
   );
 };
+
+const BlogPostDetail = () =>
+  BlogPostDetailPage({ ...useBlogPostDetailLogic() });
+
+export default BlogPostDetail;
