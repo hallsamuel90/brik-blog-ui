@@ -31,7 +31,7 @@ jobs:
       - name: Deploy to Production
         if: ${{ github.ref == 'refs/heads/main' }}
         run: |
-          yarn global add serverless
+          yarn global add serverless@2.72.2
           serverless deploy --stage prod
         env:
           SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_KEY }}
