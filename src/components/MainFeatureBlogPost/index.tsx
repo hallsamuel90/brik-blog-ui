@@ -3,13 +3,18 @@ import { Box, Grid, Link, Paper, Typography } from '@mui/material';
 import { BrikTheme } from '../../shared/theme';
 import { BlogPost } from '../../shared/types';
 import { useTheme } from '@emotion/react';
+import { Link as RouterLink } from 'react-router-dom';
 
 export interface MainFeatureBlogPostProps {
-  blogPost: BlogPost;
+  blogPost?: BlogPost;
 }
 
 export const MainFeatureBlogPost = ({ blogPost }: MainFeatureBlogPostProps) => {
   const theme = useTheme() as BrikTheme;
+
+  if (!blogPost) {
+    return <></>;
+  }
 
   return (
     <Paper
@@ -57,8 +62,9 @@ export const MainFeatureBlogPost = ({ blogPost }: MainFeatureBlogPostProps) => {
               {blogPost.preview}
             </Typography>
             <Link
+              component={RouterLink}
               variant="subtitle1"
-              href={blogPost.id}
+              to={blogPost.id}
               sx={{ color: theme.palette.primary.contrastText }}
             >
               continue reading...

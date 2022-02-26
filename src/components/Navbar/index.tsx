@@ -2,6 +2,7 @@ import React from 'react';
 import { AppBar, Box, Toolbar, Typography, Link } from '@mui/material';
 import { useTheme } from '@emotion/react';
 import { BrikTheme } from '../../shared/theme';
+import { Link as RouterLink } from 'react-router-dom';
 
 export interface NavbarProps {
   toolbarColor?: string;
@@ -15,7 +16,8 @@ export const Navbar = ({}: NavbarProps) => {
       <AppBar position="static">
         <Toolbar sx={{ backgroundColor: theme.palette.primary.main }}>
           <Link
-            href="https://allidoiscode.com/"
+            component={RouterLink}
+            to="/"
             underline="hover"
             sx={{ color: theme.palette.primary.contrastText }}
           >
