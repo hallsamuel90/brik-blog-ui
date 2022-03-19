@@ -27,3 +27,9 @@ Primary.args = {
     },
   },
 };
+
+export const Loading = Template.bind({});
+Loading.args = {
+  blogPost: undefined,
+  loading: true,
+};

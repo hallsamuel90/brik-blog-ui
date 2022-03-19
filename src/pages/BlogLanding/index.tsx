@@ -7,6 +7,7 @@ import { Navbar } from '../../components/Navbar';
 import { BlogPost } from '../../shared/types';
 import { theme } from '../../shared/theme';
 import { BlogStore, useBlogLandingLogic } from './useBlogLandingLogic';
+import { times } from 'lodash';
 
 export interface BlogLandingProps {
   blogStore?: BlogStore;
@@ -14,17 +15,16 @@ export interface BlogLandingProps {
 }
 
 export const BlogLandingPage = ({ blogStore, loading }: BlogLandingProps) => {
-  if (!blogStore) {
-    return <></>;
-  }
-
   return (
     <>
       <ThemeProvider theme={theme}>
         <Navbar toolbarColor={theme.palette.primary.main} />
         <Container maxWidth="lg">
           <Box sx={{ paddingTop: 2 }}>
-            <MainFeatureBlogPost blogPost={blogStore.mainFeaturedBlogPost} />
+            <MainFeatureBlogPost
+              blogPost={blogStore?.mainFeaturedBlogPost}
+              loading={loading}
+            />
           </Box>
           <Typography
             variant="h6"
@@ -34,11 +34,17 @@ export const BlogLandingPage = ({ blogStore, loading }: BlogLandingProps) => {
             Latest from the noggin...
           </Typography>
           <Grid container spacing={3}>
-            {blogStore.blogPosts.map((blogPost) => (
-              <Grid item key={blogPost.title}>
-                <BlogPostCard blogPost={blogPost} />
-              </Grid>
-            ))}
+            {loading
+              ? times(3, () => (
+                  <Grid item>
+                    <BlogPostCard loading={loading} />
+                  </Grid>
+                ))
+              : blogStore?.blogPosts.map((blogPost) => (
+                  <Grid item key={blogPost.title}>
+                    <BlogPostCard blogPost={blogPost} loading={loading} />
+                  </Grid>
+                ))}
           </Grid>
         </Container>
       </ThemeProvider>

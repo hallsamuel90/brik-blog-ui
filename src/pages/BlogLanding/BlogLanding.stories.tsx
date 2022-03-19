@@ -140,3 +140,9 @@ Primary.args = {
     ],
   },
 };
+
+export const Loading = Template.bind({});
+Loading.args = {
+  blogStore: undefined,
+  loading: true,
+};

@@ -16,3 +16,9 @@ export const Primary = Template.bind({});
 Primary.args = {
   imageLocation: '/assets/feet-up.png',
 };
+
+export const Loading = Template.bind({});
+Loading.args = {
+  imageLocation: undefined,
+  loading: true,
+};
