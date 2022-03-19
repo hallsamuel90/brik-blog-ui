@@ -84,3 +84,10 @@ Primary.args = {
   maximus, intulerant inque valet breve caecisque. Carina esse sororem tamen iano
   placidi.,`,
 };
+
+export const Loading = Template.bind({});
+Loading.args = {
+  blogPost: undefined,
+  content: undefined,
+  loading: true,
+};
