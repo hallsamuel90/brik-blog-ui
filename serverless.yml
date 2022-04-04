@@ -1,6 +1,6 @@
 org: bigghealthy
 component: website
-name: all-i-do-is-code
+name: brik
 
 inputs:
   src: ./build
