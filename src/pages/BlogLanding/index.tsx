@@ -53,6 +53,3 @@ export const BlogLandingPage = ({ blogStore, loading }: BlogLandingProps) => {
 };
 
 export const BlogLanding = () => BlogLandingPage({ ...useBlogLandingLogic() });
-
-// const BlogPostDetail = ({ blogPost }: { blogPost: BlogPost }) =>
-//   BlogPostDetailPage({ ...useBlogPostDetailLogic({ blogPost }) });

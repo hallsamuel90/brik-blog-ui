@@ -30,6 +30,8 @@ export const BlogPostDetailPage = ({
               loading={loading}
             />
           </Box>
+        </Container>
+        <Container maxWidth="md">
           <Typography
             component="h1"
             variant="h2"

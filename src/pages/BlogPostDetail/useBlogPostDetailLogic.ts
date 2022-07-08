@@ -4,11 +4,7 @@ import { BlogPost } from '../../shared/types';
 import useFetch from 'use-http';
 import { useParams } from 'react-router-dom';
 import { BlogStore } from '../BlogLanding/useBlogLandingLogic';
-
-const BLOG_STORE_URL =
-  'https://raw.githubusercontent.com/hallsamuel90/brik-blog-content/main/blog-posts-store.json';
-const BLOG_CONTENT_URL =
-  'https://raw.githubusercontent.com/hallsamuel90/brik-blog-content/main/blog-posts';
+import { BLOG_CONTENT_URL, BLOG_STORE_URL } from '../../env';
 
 export const useBlogPostDetailLogic = () => {
   const { id } = useParams();
